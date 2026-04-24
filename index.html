@@ -83,9 +83,29 @@
     }
 
     .card h3 { font-size: 1.05rem; color: #003876; }
+
+    .card h3 a {
+      color: #003876;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color .2s, color .2s;
+    }
+
+    .card h3 a:hover {
+      color: #0055b3;
+      border-bottom-color: #ffd100;
+    }
+
+    .card h3 a .ext-icon {
+      font-size: .75rem;
+      vertical-align: super;
+      margin-left: .2rem;
+      opacity: .65;
+    }
+
     .card p  { font-size: .9rem; color: #444; flex: 1; }
 
-    .card a {
+    .card a.btn {
       display: inline-block;
       margin-top: .4rem;
       background: #003876;
@@ -99,7 +119,7 @@
       align-self: flex-start;
     }
 
-    .card a:hover { background: #0055b3; }
+    .card a.btn:hover { background: #0055b3; }
 
     footer {
       text-align: center;
@@ -133,39 +153,39 @@
   <div class="cards">
 
     <div class="card">
-      <h3>Financial Aid Office</h3>
+      <h3><a href="https://www.mdc.edu/financial-aid/" target="_blank" rel="noopener">Financial Aid Office <span class="ext-icon">↗</span></a></h3>
       <p>Apply for federal and state grants, loans, and work-study. Check your award status and deadlines.</p>
-      <a href="https://www.mdc.edu/financial-aid/" target="_blank" rel="noopener">Visit Page</a>
+      <a class="btn" href="https://www.mdc.edu/financial-aid/" target="_blank" rel="noopener">Visit Page</a>
     </div>
 
     <div class="card">
-      <h3>FAFSA (Free Application for Federal Student Aid)</h3>
+      <h3><a href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank" rel="noopener">FAFSA (Free Application for Federal Student Aid) <span class="ext-icon">↗</span></a></h3>
       <p>Complete the FAFSA every year to qualify for federal Pell Grants, student loans, and work-study funds.</p>
-      <a href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank" rel="noopener">Apply Now</a>
+      <a class="btn" href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank" rel="noopener">Apply Now</a>
     </div>
 
     <div class="card">
-      <h3>Florida Bright Futures</h3>
+      <h3><a href="https://www.floridastudentfinancialaidsg.org/SAPHome/SAPHome?url=home" target="_blank" rel="noopener">Florida Bright Futures <span class="ext-icon">↗</span></a></h3>
       <p>Florida-based merit scholarship program. Check eligibility and renewal requirements through OSFA.</p>
-      <a href="https://www.floridastudentfinancialaidsg.org/SAPHome/SAPHome?url=home" target="_blank" rel="noopener">Learn More</a>
+      <a class="btn" href="https://www.floridastudentfinancialaidsg.org/SAPHome/SAPHome?url=home" target="_blank" rel="noopener">Learn More</a>
     </div>
 
     <div class="card">
-      <h3>MDC Foundation Scholarships</h3>
+      <h3><a href="https://www.mdc.edu/foundation/scholarships/" target="_blank" rel="noopener">MDC Foundation Scholarships <span class="ext-icon">↗</span></a></h3>
       <p>Hundreds of scholarships for MDC students based on need, merit, program, or background. Apply each semester.</p>
-      <a href="https://www.mdc.edu/foundation/scholarships/" target="_blank" rel="noopener">Browse Scholarships</a>
+      <a class="btn" href="https://www.mdc.edu/foundation/scholarships/" target="_blank" rel="noopener">Browse Scholarships</a>
     </div>
 
     <div class="card">
-      <h3>Satisfactory Academic Progress (SAP)</h3>
+      <h3><a href="https://www.mdc.edu/financial-aid/satisfactory-academic-progress.aspx" target="_blank" rel="noopener">Satisfactory Academic Progress (SAP) <span class="ext-icon">↗</span></a></h3>
       <p>Understand the GPA and completion-rate requirements you must meet to keep receiving financial aid.</p>
-      <a href="https://www.mdc.edu/financial-aid/satisfactory-academic-progress.aspx" target="_blank" rel="noopener">SAP Policy</a>
+      <a class="btn" href="https://www.mdc.edu/financial-aid/satisfactory-academic-progress.aspx" target="_blank" rel="noopener">SAP Policy</a>
     </div>
 
     <div class="card">
-      <h3>Student Emergency Fund</h3>
+      <h3><a href="https://www.mdc.edu/foundation/student-support/" target="_blank" rel="noopener">Student Emergency Fund <span class="ext-icon">↗</span></a></h3>
       <p>Short-term emergency grants for students facing unexpected financial hardships (rent, utilities, food, etc.).</p>
-      <a href="https://www.mdc.edu/foundation/student-support/" target="_blank" rel="noopener">Apply for Help</a>
+      <a class="btn" href="https://www.mdc.edu/foundation/student-support/" target="_blank" rel="noopener">Apply for Help</a>
     </div>
 
   </div>
@@ -175,39 +195,39 @@
   <div class="cards">
 
     <div class="card">
-      <h3>Career Services</h3>
+      <h3><a href="https://www.mdc.edu/career-services/" target="_blank" rel="noopener">Career Services <span class="ext-icon">↗</span></a></h3>
       <p>Résumé reviews, mock interviews, career fairs, and job placement assistance — available at every campus.</p>
-      <a href="https://www.mdc.edu/career-services/" target="_blank" rel="noopener">Get Help</a>
+      <a class="btn" href="https://www.mdc.edu/career-services/" target="_blank" rel="noopener">Get Help</a>
     </div>
 
     <div class="card">
-      <h3>Federal Work-Study</h3>
+      <h3><a href="https://www.mdc.edu/financial-aid/types-of-aid/work-study.aspx" target="_blank" rel="noopener">Federal Work-Study <span class="ext-icon">↗</span></a></h3>
       <p>Part-time on- or off-campus jobs for eligible students. Must have financial need — awarded through FAFSA.</p>
-      <a href="https://www.mdc.edu/financial-aid/types-of-aid/work-study.aspx" target="_blank" rel="noopener">Learn More</a>
+      <a class="btn" href="https://www.mdc.edu/financial-aid/types-of-aid/work-study.aspx" target="_blank" rel="noopener">Learn More</a>
     </div>
 
     <div class="card">
-      <h3>Handshake — Job Portal</h3>
+      <h3><a href="https://mdc.joinhandshake.com/" target="_blank" rel="noopener">Handshake — Job Portal <span class="ext-icon">↗</span></a></h3>
       <p>MDC's official platform to find internships, part-time, and full-time jobs tailored to college students.</p>
-      <a href="https://mdc.joinhandshake.com/" target="_blank" rel="noopener">Find Jobs</a>
+      <a class="btn" href="https://mdc.joinhandshake.com/" target="_blank" rel="noopener">Find Jobs</a>
     </div>
 
     <div class="card">
-      <h3>Internship Programs</h3>
+      <h3><a href="https://www.mdc.edu/career-services/internships.aspx" target="_blank" rel="noopener">Internship Programs <span class="ext-icon">↗</span></a></h3>
       <p>Gain real work experience in your field while earning credit. Talk to your academic advisor or Career Services.</p>
-      <a href="https://www.mdc.edu/career-services/internships.aspx" target="_blank" rel="noopener">Explore Internships</a>
+      <a class="btn" href="https://www.mdc.edu/career-services/internships.aspx" target="_blank" rel="noopener">Explore Internships</a>
     </div>
 
     <div class="card">
-      <h3>Workforce Education</h3>
+      <h3><a href="https://www.mdc.edu/workforce/" target="_blank" rel="noopener">Workforce Education <span class="ext-icon">↗</span></a></h3>
       <p>Short-term certificates and workforce training programs to boost job skills or change careers faster.</p>
-      <a href="https://www.mdc.edu/workforce/" target="_blank" rel="noopener">View Programs</a>
+      <a class="btn" href="https://www.mdc.edu/workforce/" target="_blank" rel="noopener">View Programs</a>
     </div>
 
     <div class="card">
-      <h3>Florida DEO — Unemployment Benefits</h3>
+      <h3><a href="https://floridajobs.org/Reemployment-Assistance-Service-Center" target="_blank" rel="noopener">Florida DEO — Unemployment Benefits <span class="ext-icon">↗</span></a></h3>
       <p>If you've lost a job or hours, you may qualify for Florida Reemployment Assistance while in school.</p>
-      <a href="https://floridajobs.org/Reemployment-Assistance-Service-Center" target="_blank" rel="noopener">Apply Online</a>
+      <a class="btn" href="https://floridajobs.org/Reemployment-Assistance-Service-Center" target="_blank" rel="noopener">Apply Online</a>
     </div>
 
   </div>
@@ -217,39 +237,39 @@
   <div class="cards">
 
     <div class="card">
-      <h3>Tutoring Centers (LRC)</h3>
+      <h3><a href="https://www.mdc.edu/tutoring/" target="_blank" rel="noopener">Tutoring Centers (LRC) <span class="ext-icon">↗</span></a></h3>
       <p>Free tutoring in math, writing, science, and more at Learning Resource Centers on every campus.</p>
-      <a href="https://www.mdc.edu/tutoring/" target="_blank" rel="noopener">Find a Tutor</a>
+      <a class="btn" href="https://www.mdc.edu/tutoring/" target="_blank" rel="noopener">Find a Tutor</a>
     </div>
 
     <div class="card">
-      <h3>Writing Center</h3>
+      <h3><a href="https://www.mdc.edu/writing-center/" target="_blank" rel="noopener">Writing Center <span class="ext-icon">↗</span></a></h3>
       <p>Get feedback on essays, research papers, and writing assignments from trained writing consultants.</p>
-      <a href="https://www.mdc.edu/writing-center/" target="_blank" rel="noopener">Book a Session</a>
+      <a class="btn" href="https://www.mdc.edu/writing-center/" target="_blank" rel="noopener">Book a Session</a>
     </div>
 
     <div class="card">
-      <h3>MDC Library</h3>
+      <h3><a href="https://library.mdc.edu/" target="_blank" rel="noopener">MDC Library <span class="ext-icon">↗</span></a></h3>
       <p>Access millions of books, journals, databases, and research tools — on campus and online 24/7.</p>
-      <a href="https://library.mdc.edu/" target="_blank" rel="noopener">Go to Library</a>
+      <a class="btn" href="https://library.mdc.edu/" target="_blank" rel="noopener">Go to Library</a>
     </div>
 
     <div class="card">
-      <h3>Academic Advising</h3>
+      <h3><a href="https://www.mdc.edu/academic-advising/" target="_blank" rel="noopener">Academic Advising <span class="ext-icon">↗</span></a></h3>
       <p>Plan your degree, pick the right classes, and stay on track to graduate. Meet with an advisor each semester.</p>
-      <a href="https://www.mdc.edu/academic-advising/" target="_blank" rel="noopener">Meet an Advisor</a>
+      <a class="btn" href="https://www.mdc.edu/academic-advising/" target="_blank" rel="noopener">Meet an Advisor</a>
     </div>
 
     <div class="card">
-      <h3>Disability Services (ACCESS)</h3>
+      <h3><a href="https://www.mdc.edu/disability-services/" target="_blank" rel="noopener">Disability Services (ACCESS) <span class="ext-icon">↗</span></a></h3>
       <p>Accommodations for students with disabilities — extended test time, note-taking, and more.</p>
-      <a href="https://www.mdc.edu/disability-services/" target="_blank" rel="noopener">Request Accommodations</a>
+      <a class="btn" href="https://www.mdc.edu/disability-services/" target="_blank" rel="noopener">Request Accommodations</a>
     </div>
 
     <div class="card">
-      <h3>Transfer Services</h3>
+      <h3><a href="https://www.mdc.edu/transfer/" target="_blank" rel="noopener">Transfer Services <span class="ext-icon">↗</span></a></h3>
       <p>Planning to move to a university? Get help with transfer agreements (AA to FIU, FAU, UM, and more).</p>
-      <a href="https://www.mdc.edu/transfer/" target="_blank" rel="noopener">Transfer Info</a>
+      <a class="btn" href="https://www.mdc.edu/transfer/" target="_blank" rel="noopener">Transfer Info</a>
     </div>
 
   </div>
@@ -259,27 +279,27 @@
   <div class="cards">
 
     <div class="card">
-      <h3>Food Pantries on Campus</h3>
+      <h3><a href="https://www.mdc.edu/foundation/student-support/" target="_blank" rel="noopener">Food Pantries on Campus <span class="ext-icon">↗</span></a></h3>
       <p>MDC campuses host food pantries and partner with community organizations. No questions asked — free food for students.</p>
-      <a href="https://www.mdc.edu/foundation/student-support/" target="_blank" rel="noopener">Find a Pantry</a>
+      <a class="btn" href="https://www.mdc.edu/foundation/student-support/" target="_blank" rel="noopener">Find a Pantry</a>
     </div>
 
     <div class="card">
-      <h3>Housing &amp; Homelessness Resources</h3>
+      <h3><a href="https://www.mdc.edu/student-services/" target="_blank" rel="noopener">Housing &amp; Homelessness Resources <span class="ext-icon">↗</span></a></h3>
       <p>If you're facing housing instability, contact Student Services or the Dean of Students office for referrals.</p>
-      <a href="https://www.mdc.edu/student-services/" target="_blank" rel="noopener">Contact Us</a>
+      <a class="btn" href="https://www.mdc.edu/student-services/" target="_blank" rel="noopener">Contact Us</a>
     </div>
 
     <div class="card">
-      <h3>SNAP Benefits (Food Stamps)</h3>
+      <h3><a href="https://www.myflorida.com/accessflorida/" target="_blank" rel="noopener">SNAP Benefits (Food Stamps) <span class="ext-icon">↗</span></a></h3>
       <p>Some college students qualify for SNAP. Apply through Florida ACCESS and bring proof of enrollment.</p>
-      <a href="https://www.myflorida.com/accessflorida/" target="_blank" rel="noopener">Apply for SNAP</a>
+      <a class="btn" href="https://www.myflorida.com/accessflorida/" target="_blank" rel="noopener">Apply for SNAP</a>
     </div>
 
     <div class="card">
-      <h3>Childcare Assistance</h3>
+      <h3><a href="https://www.mdc.edu/student-services/childcare.aspx" target="_blank" rel="noopener">Childcare Assistance <span class="ext-icon">↗</span></a></h3>
       <p>MDC partners with Early Learning Coalition to help student parents with affordable childcare options.</p>
-      <a href="https://www.mdc.edu/student-services/childcare.aspx" target="_blank" rel="noopener">Learn More</a>
+      <a class="btn" href="https://www.mdc.edu/student-services/childcare.aspx" target="_blank" rel="noopener">Learn More</a>
     </div>
 
   </div>
@@ -289,21 +309,21 @@
   <div class="cards">
 
     <div class="card">
-      <h3>Counseling Services</h3>
+      <h3><a href="https://www.mdc.edu/counseling/" target="_blank" rel="noopener">Counseling Services <span class="ext-icon">↗</span></a></h3>
       <p>Free, confidential mental health counseling for MDC students. In-person and virtual appointments available.</p>
-      <a href="https://www.mdc.edu/counseling/" target="_blank" rel="noopener">Schedule Now</a>
+      <a class="btn" href="https://www.mdc.edu/counseling/" target="_blank" rel="noopener">Schedule Now</a>
     </div>
 
     <div class="card">
-      <h3>Veterans Services</h3>
+      <h3><a href="https://www.mdc.edu/veterans/" target="_blank" rel="noopener">Veterans Services <span class="ext-icon">↗</span></a></h3>
       <p>Dedicated support for student veterans: VA benefits, tutoring, advising, and a Veterans Resource Center.</p>
-      <a href="https://www.mdc.edu/veterans/" target="_blank" rel="noopener">Vet Resources</a>
+      <a class="btn" href="https://www.mdc.edu/veterans/" target="_blank" rel="noopener">Vet Resources</a>
     </div>
 
     <div class="card">
-      <h3>Crisis Hotline — 988 Suicide &amp; Crisis Lifeline</h3>
+      <h3><a href="https://988lifeline.org/" target="_blank" rel="noopener">Crisis Hotline — 988 Suicide &amp; Crisis Lifeline <span class="ext-icon">↗</span></a></h3>
       <p>If you're in a mental health crisis, call or text <strong>988</strong> anytime — free, confidential support 24/7.</p>
-      <a href="https://988lifeline.org/" target="_blank" rel="noopener">988lifeline.org</a>
+      <a class="btn" href="https://988lifeline.org/" target="_blank" rel="noopener">988lifeline.org</a>
     </div>
 
   </div>
@@ -313,27 +333,27 @@
   <div class="cards">
 
     <div class="card">
-      <h3>IT Help Desk</h3>
+      <h3><a href="https://www.mdc.edu/it/" target="_blank" rel="noopener">IT Help Desk <span class="ext-icon">↗</span></a></h3>
       <p>Get help with your MDC ID, MyMDC portal, Canvas, email, Wi-Fi, and other tech issues.</p>
-      <a href="https://www.mdc.edu/it/" target="_blank" rel="noopener">Contact IT</a>
+      <a class="btn" href="https://www.mdc.edu/it/" target="_blank" rel="noopener">Contact IT</a>
     </div>
 
     <div class="card">
-      <h3>Free Microsoft Office 365</h3>
+      <h3><a href="https://www.microsoft.com/en-us/education/products/office" target="_blank" rel="noopener">Free Microsoft Office 365 <span class="ext-icon">↗</span></a></h3>
       <p>All enrolled MDC students get free access to Microsoft Word, Excel, PowerPoint, Teams, and more.</p>
-      <a href="https://www.microsoft.com/en-us/education/products/office" target="_blank" rel="noopener">Get Office 365</a>
+      <a class="btn" href="https://www.microsoft.com/en-us/education/products/office" target="_blank" rel="noopener">Get Office 365</a>
     </div>
 
     <div class="card">
-      <h3>Canvas (Online Learning)</h3>
+      <h3><a href="https://mdc.instructure.com/" target="_blank" rel="noopener">Canvas (Online Learning) <span class="ext-icon">↗</span></a></h3>
       <p>Access your online and hybrid course materials, assignments, grades, and announcements through Canvas.</p>
-      <a href="https://mdc.instructure.com/" target="_blank" rel="noopener">Go to Canvas</a>
+      <a class="btn" href="https://mdc.instructure.com/" target="_blank" rel="noopener">Go to Canvas</a>
     </div>
 
     <div class="card">
-      <h3>Computer Labs</h3>
+      <h3><a href="https://library.mdc.edu/hours" target="_blank" rel="noopener">Computer Labs <span class="ext-icon">↗</span></a></h3>
       <p>Free computer access with printing available at every MDC campus library and Learning Resource Center.</p>
-      <a href="https://library.mdc.edu/hours" target="_blank" rel="noopener">Lab Hours</a>
+      <a class="btn" href="https://library.mdc.edu/hours" target="_blank" rel="noopener">Lab Hours</a>
     </div>
 
   </div>
